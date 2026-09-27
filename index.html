@@ -1,167 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Asna Fathima | Personal Website</title>
+    <title>Asna Fathima | Portfolio</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background: #f5f7fa;
             color: #222;
         }
 
-        /* Navigation */
         nav {
             background: #111827;
-            padding: 18px;
+            padding: 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
-            font-size: 15px;
+            margin: 0 10px;
+            font-size: 16px;
         }
 
         nav a:hover {
             color: #60a5fa;
         }
 
-        /* Common Section */
-        section {
-            min-height: 500px;
-            padding: 80px 10%;
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            padding: 30px;
         }
 
         h1 {
-            font-size: 45px;
-            margin-bottom: 20px;
+            font-size: 48px;
+            color: #2563eb;
+            margin-bottom: 10px;
         }
 
         h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
+            font-weight: normal;
+            color: #444;
         }
 
         p {
             font-size: 18px;
             line-height: 1.7;
-        }
-
-        /* 1. Home */
-        #home {
-            background: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #home h1 span {
-            color: #2563eb;
-        }
-
-        .welcome {
-            color: #2563eb;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        .latest-post {
-            margin-top: 40px;
-            padding: 25px;
-            max-width: 650px;
-            background: #f3f4f6;
-            border-radius: 15px;
-        }
-
-        /* About */
-        #about {
-            background: #f5f7fa;
-        }
-
-        /* Achievements */
-        #achievements {
-            background: white;
-        }
-
-        .achievement-box {
             max-width: 700px;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 12px;
-            background: #f3f4f6;
         }
 
-        /* Feed */
-        #feed {
-            background: #f5f7fa;
-        }
-
-        .post {
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 15px;
-            text-align: left;
-        }
-
-        /* Projects */
-        #projects {
-            background: white;
-        }
-
-        .project {
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 25px;
-            background: #f3f4f6;
-            border-radius: 15px;
-        }
-
-        /* Skills */
-        #skills {
-            background: #f5f7fa;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 30px;
-        }
-
-        .skill {
-            background: #2563eb;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 25px;
-        }
-
-        /* Resume */
-        #resume {
-            background: white;
-        }
-
-        .resume-button {
+        .button {
             display: inline-block;
             margin-top: 25px;
             padding: 13px 25px;
@@ -171,295 +68,52 @@
             border-radius: 8px;
         }
 
-        /* Contact */
-        #contact {
-            background: #f5f7fa;
+        .button:hover {
+            background: #1d4ed8;
         }
 
-        /* Admin */
-        #admin {
-            background: white;
-        }
-
-        .admin-box {
-            max-width: 600px;
-            margin: auto;
-            padding: 30px;
-            background: #f3f4f6;
-            border-radius: 15px;
-        }
-
-        /* Footer */
         footer {
             background: #111827;
             color: white;
             text-align: center;
-            padding: 25px;
-        }
-
-        /* Mobile */
-        @media (max-width: 800px) {
-
-            nav a {
-                display: inline-block;
-                margin: 6px;
-            }
-
-            h1 {
-                font-size: 35px;
-            }
-
-            section {
-                padding: 60px 6%;
-            }
+            padding: 20px;
         }
     </style>
 </head>
 
-
 <body>
 
-    <!-- Navigation -->
     <nav>
-
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#feed">Feed</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <a href="#admin">Admin</a>
-
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="feed.html">Feed</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
     </nav>
 
+    <div class="hero">
 
-    <!-- 1. HOME -->
-    <section id="home">
+        <h1>Asna Fathima</h1>
 
-        <p class="welcome">WELCOME TO MY WEBSITE</p>
-
-        <h1>
-            Hello, I'm <span>Asna Fathima</span>
-        </h1>
+        <h2>Computer Science Student | Technology Enthusiast</h2>
 
         <p>
-            Computer Science Student | Technology Enthusiast | Developer
+            Welcome to my personal portfolio website.
+            Here I share my projects, achievements,
+            technical skills, learning journey and updates.
         </p>
 
-        <div class="latest-post">
+        <a class="button" href="about.html">Explore My Portfolio</a>
 
-            <h2>Latest Posts</h2>
+    </div>
 
-            <p>
-                My latest technical videos, photos, projects
-                and updates will appear here.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- 2. ABOUT ME -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Computer Science student interested in
-            technology, programming, software development
-            and modern technologies.
-        </p>
-
-        <br>
-
-        <p>
-            <strong>Education:</strong> Computer Science
-        </p>
-
-        <p>
-            <strong>Interests:</strong> Software Development,
-            AI/ML, Robotics and Technology
-        </p>
-
-        <p>
-            <strong>Goals:</strong> To develop strong technical
-            skills and build useful technology solutions.
-        </p>
-
-    </section>
-
-
-    <!-- 3. ACHIEVEMENTS -->
-    <section id="achievements">
-
-        <h2>Achievements</h2>
-
-        <div class="achievement-box">
-
-            <h3>Academic & Technical Achievements</h3>
-
-            <p>
-                Certificates, competitions, events and
-                other achievements will be displayed here.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- 4. FEED -->
-    <section id="feed">
-
-        <h2>Technical Feed</h2>
-
-        <div class="post">
-
-            <h3>📸 My Technical Update</h3>
-
-            <p>
-                Your technical photos, videos and updates
-                will appear here.
-            </p>
-
-        </div>
-
-        <div class="post">
-
-            <h3>🎥 Technical Video</h3>
-
-            <p>
-                Your technical video posts will appear here.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- 5. PROJECTS -->
-    <section id="projects">
-
-        <h2>My Projects</h2>
-
-        <div class="project">
-
-            <h3>Event Management System</h3>
-
-            <p>
-                A Java and MySQL based project for managing
-                events efficiently.
-            </p>
-
-        </div>
-
-        <div class="project">
-
-            <h3>College Projects</h3>
-
-            <p>
-                My coding and college projects will be
-                displayed here.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- 6. SKILLS -->
-    <section id="skills">
-
-        <h2>My Skills</h2>
-
-        <div class="skills-list">
-
-            <div class="skill">Python</div>
-            <div class="skill">Java</div>
-            <div class="skill">C++</div>
-            <div class="skill">SQL</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">DBMS</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- 7. RESUME -->
-    <section id="resume">
-
-        <h2>My Resume</h2>
-
-        <p>
-            You can view or download my latest resume here.
-        </p>
-
-        <a href="#" class="resume-button">
-            View Resume
-        </a>
-
-    </section>
-
-
-    <!-- 8. CONTACT -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>
-            Email: your-email@example.com
-        </p>
-
-        <br>
-
-        <p>
-            LinkedIn | GitHub | Instagram
-        </p>
-
-    </section>
-
-
-    <!-- 9. ADMIN -->
-    <section id="admin">
-
-        <h2>Admin</h2>
-
-        <div class="admin-box">
-
-            <h3>Website Administration</h3>
-
-            <p>
-                This area will be used only by the website owner
-                to add, edit or remove technical posts.
-            </p>
-
-            <br>
-
-            <p>
-                🔐 Admin login will be added later.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
     <footer>
-
-        <p>
-            © 2026 Asna Fathima | Personal Technical Website
-        </p>
-
+        © 2026 Asna Fathima. All Rights Reserved.
     </footer>
 
 </body>
-
 </html>
